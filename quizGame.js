@@ -25,33 +25,33 @@ const questions = [
         
         question: "What is the Meaning of HTML?",
         choiceA:  "Hyper Text Markup Language", 
-        choiceB:  "i am test", 
-        choiceC:  "get out",
-        choiceD:  "now", 
+        choiceB:  "Hyper Test Markup Language", 
+        choiceC:  "Hyper taste Makeup Lanhuage",
+        choiceD:  "None of the above", 
         correct:   "A"
     },
     {
-        question: "What is it fustrating?",
-        choiceA:  "Call Style Section", 
-        choiceB:  "never never never", 
-        choiceC:  "Cascading Style Sheet",
-        choiceD:  "None of the Above", 
-        correct:     "B"
+        question: "which among these are volatile?",
+        choiceA:  "ROM", 
+        choiceB:  "Diskette", 
+        choiceC:  "RAM",
+        choiceD:  "Monitor", 
+        correct:     "A"
     },
     {
-        question: "i hate fustration?",
-        choiceA:  "call me the beast", 
-        choiceB:  "Cannot Style Stylish", 
-        choiceC:  "Cascading Style Sheet",
-        choiceD:  "None of the Above", 
+        question: "What is a ROM?",
+        choiceA:  "Random Only Memory", 
+        choiceB:  "Random Access Maintain", 
+        choiceC:  "Option A and B",
+        choiceD:  "Random Access Memory", 
         correct:    "D"
     },
     {
-        question: "This is the Last Question?",
-        choiceA:  "call me the beast", 
-        choiceB:  "Cannot Style Stylish", 
-        choiceC:  "Cascading Style Sheet",
-        choiceD:  "None of the Above", 
+        question: "Is JavaScript a scripting language?",
+        choiceA:  "Yes", 
+        choiceB:  "Maybe", 
+        choiceC:  "no",
+        choiceD:  "Never", 
         correct:    "A"
     }
 ];
