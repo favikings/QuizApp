@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="quizGame.js"></script>
+    <title>Game Quiz</title>
+</head>
+<body>
+
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question"></div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn optionBtn btn1" id="A" onclick="checkAnswer('A')"></button>
+                <button class="btn optionBtn btn2" id="B" onclick="checkAnswer('B')"></button>
+                <button class="btn optionBtn btn3" id="C" onclick="checkAnswer('C')"></button>
+                <button class="btn optionBtn btn4" id="D" onclick="checkAnswer('D')"></button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn" >Start Game</button>
+            <button id="scoreBtn" class="score-btn btn hide"></button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+            
+        </div>
+
+        <div class="endQuiz hide"id="displayScore">
+            <h1>Thanks for Playing</h1>
+            <h3 id="endScoreContainer"></h3>
+        </div>
+    </div>
+</body>
+</html>
