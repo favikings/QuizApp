@@ -98,8 +98,6 @@ body{
 }
 
 .noclick {
-    /* font-size: 1rem;
-    padding: .8rem; */
     pointer-events: none;
 }
 

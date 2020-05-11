@@ -36,15 +36,15 @@ const questions = [
         choiceB:  "Diskette", 
         choiceC:  "RAM",
         choiceD:  "Monitor", 
-        correct:     "A"
+        correct:  "C"
     },
     {
         question: "What is a ROM?",
-        choiceA:  "Random Only Memory", 
+        choiceA:  "Read Only Memory", 
         choiceB:  "Random Access Maintain", 
         choiceC:  "Option A and B",
         choiceD:  "Random Access Memory", 
-        correct:    "D"
+        correct:  "A"
     },
     {
         question: "Is JavaScript a scripting language?",
@@ -94,8 +94,12 @@ function startGame(){
             //Correct Answer
             newVar.classList.add("correct");
             
+            
             scoreCounter();
-
+            if(optionBtns.clicked == true){
+                optionBtns.classList.add("noclick")
+            }
+            // optionBtns.classList.add("noclick")
             
             //change
             // answerIsCorrect();
@@ -106,12 +110,10 @@ function startGame(){
         newVar.classList.add("wrong");
     }
     
-    for(var i = 0; i<options.length; i++){
-        
-        options[i].classList.add('no-click');
-    }
+    disabledBtn();
     
  }
+ 
 
  function scoreCounter(){
     //  for(var index = 0; index <= lastQuestionIndex; index++){
@@ -135,6 +137,8 @@ function startGame(){
     document.querySelector(".btn2").classList.remove("wrong", "correct");
     document.querySelector(".btn3").classList.remove("wrong", "correct");
     document.querySelector(".btn4").classList.remove("wrong", "correct");
+
+    enableBtns();
  }
 
 function quizOver(){
@@ -152,3 +156,16 @@ function quizOver(){
  function answerIsWrong(){
     document.getElementById(currentQuestion).style.backgroundColor("red");
 } */
+
+function disabledBtn(){
+    for(let i = 0; i < optionBtns.length; i++){
+        optionBtns[i].classList.add("noclick");
+    }
+}
+
+function enableBtns(){
+    for(let i=0; i<optionBtns.length; i++){
+        optionBtns[i].classList.remove("noclick");
+
+        }
+    }
